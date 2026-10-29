@@ -1,0 +1,13 @@
+{
+  "name": "kora-pay",
+  "version": "2.0.0",
+  "description": "Pricing and billing helpers for Node.js. A practice project for the SKILL.SCH open source course.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "vitest run",
+    "test:integration": "vitest run --config vitest.integration.ts"
+  },
+  "engines": { "node": ">=20" },
+  "devDependencies": { "pg": "^8.13.0", "vitest": "^2.1.0" },
+  "license": "MIT"
+}
