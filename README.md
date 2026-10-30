@@ -104,6 +104,41 @@ app.post('/webhooks/:gateway', async (req, res) => {
 
 ---
 
+## 💻 CLI
+
+Get an instant pricing quote without writing any code:
+
+```bash
+# From npm (no install required)
+
+npx kora-pay quote --plan=pro --seats=15 --currency=NGN
+
+# From a local clone
+
+node bin/kora-pay.js quote --plan=pro --seats=15 --currency=NGN
+```
+
+```
+--------------------------------------------
+💳 Kora Pay Pricing Quote
+--------------------------------------------
+Plan:       pro
+Seats:      15 (10% volume discount applied)
+Unit Price: ₦9.00
+Total:      ₦135.00
+--------------------------------------------
+```
+
+| Flag | Short | Description |
+| --- | --- | --- |
+| `--plan` | `-p` | Plan to quote: `free`, `pro`, or `team` (required) |
+| `--seats` | `-s` | Number of seats; non-negative integer (required) |
+| `--currency` | `-c` | ISO currency code used for formatting (default: `USD`) |
+| `--help` | `-h` | Show usage information |
+| `--version` | `-v` | Show the installed version |
+
+---
+
 ## 🧪 Testing & Event Loop Drills
 
 `kora-pay` also serves as a benchmark training repository for the **[SKILL.SCH Open Source Contributor & Maintainer course](https://skill.sch/open-source)**.

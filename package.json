@@ -3,6 +3,9 @@
   "version": "2.0.0",
   "description": "Pricing and billing helpers for Node.js. A practice project for the SKILL.SCH open source course.",
   "main": "src/index.js",
+  "bin": {
+    "kora-pay": "bin/kora-pay.js"
+  },
   "scripts": {
     "test": "vitest run",
     "test:integration": "vitest run --config vitest.integration.ts"
